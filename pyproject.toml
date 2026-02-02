@@ -1,0 +1,17 @@
+[project]
+name = "ribbit-solver"
+version = "0.1.0"
+description = "Solve Ribbit word puzzles from text file input"
+requires-python = ">=3.10"
+dependencies = [
+    "wordfreq>=3.1.1",
+]
+
+[project.scripts]
+ribbit = "main:main"
+
+[tool.setuptools]
+py-modules = ["main", "ribbit_solver"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "black>=24.0"]

@@ -1,0 +1,58 @@
+# Example Ribbit Puzzle
+# Grid layout (4x4):
+#   0   1   2   3
+#   R - L - O - U
+#   |\ /|       |
+#   | X |       |
+#   |/ \|       |
+#   4   5   6   7
+#   A - J   X   S
+#   |    \ |  /
+#   |     \| /
+#   8   9  10  11
+#   E   O - Y - L
+#   |    \  |   |
+#   |     \ |   |
+#   12  13  14  15
+#   H   E - N - C
+
+RLOU
+AJXS
+EOYL
+HENC
+
+Connections:
+# Row 0 horizontal
+0-1
+1-2
+2-3
+# Row 1 horizontal
+4-5
+# Row 2 horizontal
+9-10
+10-11
+# Row 3 horizontal
+13-14
+14-15
+# Column 0 vertical
+0-4
+4-8
+8-12
+# Column 1 vertical
+1-5
+5-9
+9-13
+# Column 2 vertical
+10-14
+# Column 3 vertical
+3-7
+7-11
+11-15
+# Diagonals
+0-5
+1-4
+4-9
+5-13
+7-10
+9-14
+10-13
